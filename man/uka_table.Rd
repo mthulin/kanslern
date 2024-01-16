@@ -28,4 +28,6 @@ C = sample(c("Swedish", "Norwegian", "Chilean"), 50, replace = TRUE))
 ### 2-vägstabeller ###
 data2 <- example_data |> dplyr::select(A, B)
 data2_swap <- example_data |> dplyr::select(B, A)
+uka_table(data2)
+uka_table(data2_swap)
 }

@@ -14,6 +14,8 @@
 #' ### 2-vägstabeller ###
 #' data2 <- example_data |> dplyr::select(A, B)
 #' data2_swap <- example_data |> dplyr::select(B, A)
+#' uka_table(data2)
+#' uka_table(data2_swap)
 #' @export
 uka_table <- function(df, ...) {
   ivo.table::ivo_table(df, missing_string = "(Saknas)", sums_string = "Summa", color = uka_farg("lila1"), font_name = "Arial", ...)
