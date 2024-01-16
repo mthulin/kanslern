@@ -99,7 +99,7 @@ uka_tema <- function(size = 10, angle = "a0")  {
                  panel.grid.major.x = ggplot2::element_blank(),
                  panel.grid.major.y = ggplot2::element_line(color = "#9d9d9c", size = 0.1))
 }
-ggplot2::theme_set(uka_tema())
+rlang::on_load(ggplot2::theme_set(uka_tema()))
 
 # Ladda UKA-paletten som forvalda farger i ggplot:
 rlang::on_load(
